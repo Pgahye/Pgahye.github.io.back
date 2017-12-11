@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>test중</title>
-  <meta name="description" content="제목 test중">
+  <title>Your awesome title</title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search resu...">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/17-12-08/test">
+  <link rel="canonical" href="http://localhost:4000/category/blog/feed.xml">
   <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="/feed.xml">
   
   
@@ -172,51 +172,33 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <h1>Posts Categorys</h1>
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">test중</h1>
-    <p class="post-meta">
-      <time datetime="2017-12-08T00:00:00+09:00" itemprop="datePublished">
-        
-        Dec 8, 2017
-      </time>
-      
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Pgahye</span></span>
-      </p>
+    <a href="/category/blog">blog</a>
 
-tag: 
-<span>[
-  
+
+  <div>
     
-  <a href="/tags/blog"><code class=""><nobr>blog</nobr></code>&nbsp;</a>
-  
     
-  <a href="/tags/test"><code class=""><nobr>test</nobr></code>&nbsp;</a>
-  
-]</span>
-
-<br>
-category : 
-<span>[
-  
+     <span class="site-tag">
+        <a href="blog">
+                blog (2)
+        </a>
+    </span>
     
-   <a href="/category/blog"><code class=""><nobr>blog</nobr></code>&nbsp;</a>
-  
-]</span>
-
-  </header>
-
-  <div class="post-content" itemprop="articleBody">
-    <h3 id="제목">제목</h3>
-<p>test중</p>
-
-  </div>
-
-  
-</article>
-
-
+     <span class="site-tag">
+        <a href="jekyll">
+                jekyll (1)
+        </a>
+    </span>
+    
+     <span class="site-tag">
+        <a href="update">
+                update (1)
+        </a>
+    </span>
+    
+    </div> 
 
       </div>
     </main>
