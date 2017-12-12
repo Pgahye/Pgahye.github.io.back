@@ -15,3 +15,6 @@ before_script:
 script: ./script/cibuild.sh
 exclude: [vendor]
 sudo: false
+
+
+travis encrypt GH_TOKEN=f12782fe0297406b19dfacce2d96f25ac169b04e
