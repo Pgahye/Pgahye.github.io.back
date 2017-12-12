@@ -32,7 +32,7 @@ mkdir _site
 git clone https://${GH_TOKEN}@github.com/Pgahye/Pgahye.github.io.git --branch source _site
 
 # build with Jekyll into "_site"
-bundle exec jekyll build
+#bundle exec jekyll build
 
 # push
 cd _site

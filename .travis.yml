@@ -48,11 +48,13 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   - GITHUB_REPO: github.com/Pgahye/Pgahye.github.io.git
   - REPO_TARGET_BRANCH: source
+  - EMAIL: rkgp0515@gmail.com
+  - DEPLOY_KEY: 73fc961f4715e0ae9fc3c6913ea926d20ae75b64	
 
 
 
 # your Github verified email address
-$ travis encrypt EMAIL=rkgp0515@gmail.com --add
+#$ travis encrypt EMAIL=rkgp0515@gmail.com --add
 
 # your personal access token
-$ travis encrypt DEPLOY_KEY=73fc961f4715e0ae9fc3c6913ea926d20ae75b64 --add
+#$ travis encrypt DEPLOY_KEY=73fc961f4715e0ae9fc3c6913ea926d20ae75b64 --add
