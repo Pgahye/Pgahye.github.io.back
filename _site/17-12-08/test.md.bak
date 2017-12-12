@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Docker란 무엇인가?</title>
-  <meta name="description" content="제목 Docker란 무엇인가?">
+  <title>test중</title>
+  <meta name="description" content="### 제목 test중">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/17-12-07/docker">
+  <link rel="canonical" href="http://localhost:4000/17-12-08/test.md">
   <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="/feed.xml">
   
   
@@ -175,11 +175,11 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Docker란 무엇인가?</h1>
+    <h1 class="post-title" itemprop="name headline">test중</h1>
     <p class="post-meta">
-      <time datetime="2017-12-07T00:00:00+09:00" itemprop="datePublished">
+      <time datetime="2017-12-08T00:00:00+09:00" itemprop="datePublished">
         
-        Dec 7, 2017
+        Dec 8, 2017
       </time>
       
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Pgahye</span></span>
@@ -192,7 +192,7 @@ tag:
   <a href="/tags/blog"><code class=""><nobr>blog</nobr></code>&nbsp;</a>
   
     
-  <a href="/tags/docker"><code class=""><nobr>docker</nobr></code>&nbsp;</a>
+  <a href="/tags/test"><code class=""><nobr>test</nobr></code>&nbsp;</a>
   
 ]</span>
 
@@ -208,8 +208,8 @@ category :
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <h3 id="제목">제목</h3>
-<p>Docker란 무엇인가?</p>
+    ### 제목
+test중
 
   </div>
 
