@@ -27,29 +27,41 @@ language: ruby
 rvm:
 - 2.3
 
+install:
+- gem install rake
+- bundle install
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: _site
+  target_branch: master
+  on:
+    branch: source
 #script:
-- bundle exec jekyll build
+#- bundle exec jekyll build
 
 # after building, copy the site into the gh-pages branch
 # and push back to Github
-after_success: 
-- git clone https://$GITHUB_REPO
-- cd _site
-- git config user.name "Pgahye"
-- git config user.email ${EMAIL}
+#after_success: 
+#- git clone https://$GITHUB_REPO
+#- cd _site
+#- git config user.name "Pgahye"
+#- git config user.email ${EMAIL}
 #- rsync -az --delete --exclude '.git*' ../_site/ .
 #- touch .nojekyll
-- git add --all
-- git commit -m "Generated Jekyll site by Travis CI - ${TRAVIS_BUILD_NUMBER}"
-- git push --force "https://${DEPLOY_KEY}@${GITHUB_REPO}" HEAD:${REPO_TARGET_BRANCH}
+#- git add --all
+#- git commit -m "Generated Jekyll site by Travis CI - ${TRAVIS_BUILD_NUMBER}"
+#- git push --force "https://${DEPLOY_KEY}@${GITHUB_REPO}" HEAD:${REPO_TARGET_BRANCH}
 
-env:
-  global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-  - GITHUB_REPO: github.com/Pgahye/Pgahye.github.io.git
-  - REPO_TARGET_BRANCH: source
-  - EMAIL: rkgp0515@gmail.com
-  - DEPLOY_KEY: 73fc961f4715e0ae9fc3c6913ea926d20ae75b64	
+#env:
+#  global:
+#  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+#  - GITHUB_REPO: github.com/Pgahye/Pgahye.github.io.git
+#  - REPO_TARGET_BRANCH: source
+#  - EMAIL: rkgp0515@gmail.com
+#  - DEPLOY_KEY: 73fc961f4715e0ae9fc3c6913ea926d20ae75b64	
 
 
 
