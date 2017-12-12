@@ -1,8 +1,9 @@
 
 
 language: ruby
+
 rvm:
-  - 2.0
+  - 2.3
 
 # only run CI-builds on master branch
 branches:
