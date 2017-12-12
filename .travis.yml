@@ -16,7 +16,7 @@ branches:
   only:
   - master
 exclude: [vendor]
-#sudo: false
+sudo: false
 
 # branch whitelist, only for GitHub Pages
 #branches:
