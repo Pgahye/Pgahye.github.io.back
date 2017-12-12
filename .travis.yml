@@ -18,5 +18,4 @@ script: ./script/cibuild.sh
 exclude: [vendor]
 sudo: false
 
-travis encrypt GH_TOKEN: 62f3058a11f610f69fb2b562de526f0835c13aea --add
 
