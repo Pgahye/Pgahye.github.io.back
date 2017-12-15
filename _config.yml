@@ -30,6 +30,9 @@ theme: minima
 plugins:
   - jekyll-feed
 
+
+ADMIN_EMAIL: rkgp05151@gmail.com
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
