@@ -11,7 +11,7 @@ url: "https://hibrainnet.github.io"
 ## git 설정
 git:
   admins: ## admins에 등록된 사용자만 master에 commit, merge, push를 진행할 수 있음
-    - sksong@hibrain.net
+    - rkgp0515@gmail.com
     - saltfactory@gmail.com
 
 ## Medium tokens 설정
