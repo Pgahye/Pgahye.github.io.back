@@ -1,6 +1,5 @@
 require 'yaml'
 
-
 path = File.expand_path("../../", __FILE__)
 config = YAML.load_file(path+"/_config.yml")
 
@@ -9,5 +8,4 @@ config = YAML.load_file(path+"/_config.yml")
 @admin_length = @admin_git_email.length
 
 
-
-
+@medium_token = config['medium']['integration_token']

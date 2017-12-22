@@ -1,52 +1,103 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
+## 사이트 설정
+title: 하이브레인넷 부설연구소
+email: apps@hibrain.net
+description: >-
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+baseurl: "/jekyll-and-hybe"
+url: "https://hibrainnet.github.io"
 
-# Build settings
+## git 설정
+git:
+  admins: ## admins에 등록된 사용자만 master에 commit, merge, push를 진행할 수 있음
+    - sksong@hibrain.net
+    - saltfactory@gmail.com
+
+## Medium tokens 설정
+medium:
+  integration_token: 2573b0a47fb27dde37fc91f7c5461aff3802ba0edf1f362473f47046e878fe3e2 
+
+## github 설정
+github_page:
+  remote_url: git@bitbucket.org:hibrainnet/jekyll-and-hybe.git
+  remote_name: github
+  branch: source
+  builder: travis
+  # remote_name: ?? 이건 왜 필요한건지?
+
+## travis를 이용한 github page 빌드 설정
+travis:
+  github_token: ${GIHUB_TOKEN}
+  target_branch: master
+  source_branch: source
+
+## 소셜 서비스 계정
+sns:
+  twitter: hibrainapps
+  github: hibrainnet
+  medium: hibrainapps
+
+# twitter_username: hibrainapps
+# github_username:  hibrainnet
+
+## 댓글 계정
+comments:
+  disqus:
+    shortname: hibrainappsblog
+  facebook:
+    admin_id: 100001627773972
+    app_id: 147895112528926
+
+## 페이징 설정
+
+pagination:
+  type: numbering
+  enabled: true
+  per_page: 2 # 한 화면에 보여줄 post 갯수
+  permalink: '/page/:num'
+  limit: 0 # 한번에 보여줄 페이징 숫자
+  sort_field: "date"
+  sort_reverse: true
+
+# 작성자 설정 (콜렉션)
+collections:
+  authors:
+    output: true #독립적인 파일로 생성 하고 싶은경우 true
+    permalink: /authors/:path #독릭적입 파일로 생겼을때 url
+
+# 작성자 콜렉션에 대한 메타데이터
+defaults:
+  - scope:
+      path: ''
+      type: authors
+    values:
+      layout: author
+# Jekyll 설정
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-gist
-highlighter: rouge
+  - jekyll-paginate-v2
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-compose
+  - jekyll-seo-tag
 
-git:
-  admins:
-   -  rkgp0515@gmail.com
-   -  saltfactory@gmail.com
+include: ['_pages']
 
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
 exclude:
   - vendor
   - Gemfile
-  - Gemfile.lock
+  - Geffile.lock
+  - LICENSE
+  - README.md
   - Rakefile
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+
+#pre-push hook 변수
+#githubURL=소스코드를 push할 URL
+#githubBranch=소스코트를 push할 Branch
+#remoteName=소스코드를 보낼 remote 이름
+githubURL: git@github.com:hibrainnet/jekyll-and-hybe.git
+githubBranch: source
+remoteName: github

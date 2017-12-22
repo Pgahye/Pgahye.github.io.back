@@ -1,8 +1,3 @@
-
-
-
-
-
 # filename: Rakefile
 task :default do
   puts "Building Jekyll site..."
