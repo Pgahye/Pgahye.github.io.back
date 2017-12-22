@@ -27,6 +27,7 @@ rvm:
 
 before_install:
 - sudo git remote add other https://Pgahye:12d2f451bcf19daa7158070ae62bdebd4070e171@github.com/Pgahye/Pgahye.github.io.git
+- sudo git checkout source
 - sudo git fetch other
 - sudo git merge other/post
 
