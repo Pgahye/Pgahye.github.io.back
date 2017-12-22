@@ -468,3 +468,15 @@ pre {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+paginate {
+  margin: 0;
+  padding: 1em;
+  text-align: center; }
+  paginate ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+  paginate li {
+    display: inline; }

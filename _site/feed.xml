@@ -1,2 +1,287 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-12-12T11:34:24+00:00</updated><id>/</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Docker란 무엇인가?</title><link href="/docker" rel="alternate" type="text/html" title="Docker란 무엇인가?" /><published>2017-12-06T15:00:00+00:00</published><updated>2017-12-06T15:00:00+00:00</updated><id>/docker</id><content type="html" xml:base="/docker">&lt;h3 id=&quot;제목&quot;&gt;제목&lt;/h3&gt;
-&lt;p&gt;Docker란 무엇인가?&lt;/p&gt;</content><author><name>Pgahye</name></author><category term="blog" /><category term="docker" /><summary type="html">제목 Docker란 무엇인가?</summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/jekyll-and-hybe/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/jekyll-and-hybe/" rel="alternate" type="text/html" /><updated>2017-12-22T15:57:23+09:00</updated><id>http://localhost:4000/jekyll-and-hybe/</id><title type="html">하이브레인넷 부설연구소</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">2017-12-10-박가혜</title><link href="http://localhost:4000/jekyll-and-hybe/2017/12/20/ghpark.html" rel="alternate" type="text/html" title="2017-12-10-박가혜" /><published>2017-12-20T17:58:11+09:00</published><updated>2017-12-20T17:58:11+09:00</updated><id>http://localhost:4000/jekyll-and-hybe/2017/12/20/ghpark</id><content type="html" xml:base="http://localhost:4000/jekyll-and-hybe/2017/12/20/ghpark.html">&lt;h3 id=&quot;연구내용&quot;&gt;연구내용&lt;/h3&gt;
+
+&lt;h4 id=&quot;medium-blog-마크다운형태로-저장하기&quot;&gt;Medium blog 마크다운형태로 저장하기&lt;/h4&gt;
+&lt;p&gt;Node.js의 medium exporter패키지를 이용하므로, node.js가 설치되어있어야 함&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;medium exporter패키지 설치
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/xdamman/mediumexporter&quot;&gt;Medium Exporter github URL&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;npm install -g mediumexporter
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ol&gt;
+  &lt;li&gt;yaml frontmatter를 자동으로 추가하기 위해, /mediumexporter/index.js 파일을 /usr/lib/node_modules/mediumexporter/에 추가 (기존 index.js 삭제)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;post&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;600bdec36593&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;https://medium.com/@robbinscm/mayor-bill-de-blasio-gothamist-dnainfo-interview-cbce444ca421&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Wed Dec 20 2017 00:28:23 GMT+0900 (DST)&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;New York&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Mayor Bill De Blasio&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Sanctuary Cities&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Journalism&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Inequality&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;사용방법
+마크다운 파일을 받을 디렉토리에서 명령어 실행&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; mediumexporter &lt;span class=&quot;nt&quot;&gt;--headers&lt;/span&gt; Medium 주소 &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; medium_post.md
+&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; mediumexporter &lt;span class=&quot;nt&quot;&gt;--headers&lt;/span&gt; https://medium.com/@xdamman/my-10-day-meditation-retreat-in-silence-71abda54940e &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; medium_post.md
+&lt;span class=&quot;go&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;도움말은 mediumexporter -h 을 이용&lt;/p&gt;
+
+&lt;h4 id=&quot;payload&quot;&gt;payload&lt;/h4&gt;
+&lt;p&gt;사용에 있어서 전송되는 데이터를 의미, 전송의 근본적인 목적이 되는 데이터의 일부분으로 데이터와 함께 전송되는 헤더와 메타데이터와 같은 데이터는 제외된다. 데이터 덩어리 중 흥미있는 데이터를 의미한다.&lt;/p&gt;
+
+&lt;h4 id=&quot;javascript의-object를-다루는-몇가지-팁&quot;&gt;Javascript의 Object를 다루는 몇가지 팁&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;Object의 key를 변수로 받기&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;person&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;neko&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;gender&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;male&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;person&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;person&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;gender&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;요소의 갯수 알아내기&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// object의 요소 갯수가 반환됩니다.&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Object.keys()만 돌리게 되면 해당 Object의 value값만 배열로 반환이 됩니다.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Object의 value 알아내기&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;obj&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'bar'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;baz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// ['bar', 42]&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// array like object&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;obj&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'a'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'b'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'c'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// ['a', 'b', 'c']&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;참고자료&quot;&gt;참고자료&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/xdamman/mediumexporter&quot;&gt;Medium Exporter github URL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EB%A1%9C%EB%93%9C&quot;&gt;payload&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.nekoromancer.kr/2014/07/03/javascript%EC%9D%98-object%EB%A5%BC-%EB%8B%A4%EB%A3%A8%EB%8A%94-%EB%AA%87%EA%B0%80%EC%A7%80-%ED%8C%81%EB%93%A4/&quot;&gt;Javascript의 Object를 다루는 몇가지 팁들&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/values&quot;&gt;Object.values()&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>gh.park</name></author><category term="연구노트" /><category term="인턴십" /><summary type="html">연구내용 Medium blog 마크다운형태로 저장하기 Node.js의 medium exporter패키지를 이용하므로, node.js가 설치되어있어야 함 medium exporter패키지 설치 Medium Exporter github URL npm install -g mediumexporter yaml frontmatter를 자동으로 추가하기 위해, /mediumexporter/index.js 파일을 /usr/lib/node_modules/mediumexporter/에 추가 (기존 index.js 삭제) --- layout: post author: 600bdec36593 url: https://medium.com/@robbinscm/mayor-bill-de-blasio-gothamist-dnainfo-interview-cbce444ca421 date: Wed Dec 20 2017 00:28:23 GMT+0900 (DST) tags: [New York, Mayor Bill De Blasio, Sanctuary Cities, Journalism, Inequality ] --- 사용방법 마크다운 파일을 받을 디렉토리에서 명령어 실행 $ mediumexporter --headers Medium 주소 &amp;gt; medium_post.md $&amp;gt; mediumexporter --headers https://medium.com/@xdamman/my-10-day-meditation-retreat-in-silence-71abda54940e &amp;gt; medium_post.md 도움말은 mediumexporter -h 을 이용 payload 사용에 있어서 전송되는 데이터를 의미, 전송의 근본적인 목적이 되는 데이터의 일부분으로 데이터와 함께 전송되는 헤더와 메타데이터와 같은 데이터는 제외된다. 데이터 덩어리 중 흥미있는 데이터를 의미한다. Javascript의 Object를 다루는 몇가지 팁 Object의 key를 변수로 받기 var person = { name : &quot;neko&quot;, gender : &quot;male&quot; }; console.log( person.name, person.gender ); 요소의 갯수 알아내기 var object = { ... }; var length = Object.keys( object ).length; console.log( length ); // object의 요소 갯수가 반환됩니다. // Object.keys()만 돌리게 되면 해당 Object의 value값만 배열로 반환이 됩니다. Object의 value 알아내기 var obj = { foo: 'bar', baz: 42 }; console.log(Object.values(obj)); // ['bar', 42] // array like object var obj = { 0: 'a', 1: 'b', 2: 'c' }; console.log(Object.values(obj)); // ['a', 'b', 'c'] 참고자료 Medium Exporter github URL payload Javascript의 Object를 다루는 몇가지 팁들 Object.values()</summary></entry><entry><title type="html">2017-12-20 정예린</title><link href="http://localhost:4000/jekyll-and-hybe/2017/12/20/JYL.html" rel="alternate" type="text/html" title="2017-12-20 정예린" /><published>2017-12-20T00:00:00+09:00</published><updated>2017-12-20T00:00:00+09:00</updated><id>http://localhost:4000/jekyll-and-hybe/2017/12/20/JYL</id><content type="html" xml:base="http://localhost:4000/jekyll-and-hybe/2017/12/20/JYL.html">&lt;h1 id=&quot;1-연구노트&quot;&gt;1. 연구노트&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;이미지를 클라우드에 올려 url을 가져오는 이미지 호스팅 작업을 진행&lt;/p&gt;
+
+  &lt;p&gt;사용자가 원하는 이미지 파일을 올리면 호스팅 된 이미지 url을 반환&lt;/p&gt;
+
+  &lt;p&gt;Cloudinary 클라우드와 ruby언어를 사용하여 구축&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;1-1-cloudinary-api&quot;&gt;1-1. Cloudinary API&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;클라우드 기반의 이미지 관리 솔루션&lt;/li&gt;
+  &lt;li&gt;이미지 업로드뿐만 아니라 그와 관련된 태그,  이름변경 등의 옵션을 두어 여러가지 기능을 제공&lt;/li&gt;
+  &lt;li&gt;Rails, PHP, .NET, Java, Django, Javascript(jQuery, Node.js, React, Angular), IOS, Android, Scala 등의 언어를 지원&lt;/li&gt;
+  &lt;li&gt;이미지 뿐만 아니라 비디오와 API도 제공&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://res.cloudinary.com/degxeqfok/image/upload/v1513749352/mb6cqv2ntfmqh2c3n2ph.png&quot; alt=&quot;1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://cloudinary.com/documentation&quot;&gt;Cloudinary 사이트&lt;/a&gt;에서 Ruby on Rails를 참고하여 구축&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;1-2-ruby-on-rails&quot;&gt;1-2. Ruby on Rails&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;루비로 작성 된 MVC패턴을 이용하는 오픈 소스 웹 프레임워크&lt;/li&gt;
+  &lt;li&gt;rails는 트위터, github, airbnb 등 여러 회사에서 사용 중&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;간략한 문법&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.ruby-lang.org/ko/&quot;&gt;Ruby on Rails 사이트 참조&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;1-3-cloudinary--ruby-이미지-호스팅-url-가져오기&quot;&gt;1-3. Cloudinary + Ruby 이미지 호스팅 URL 가져오기&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;준비사항&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Cloudinary 계정&lt;/li&gt;
+  &lt;li&gt;Ruby&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;1-3-1-cloudinary-계정생성-및-key값-확인&quot;&gt;1-3-1. Cloudinary 계정생성 및 key값 확인&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://res.cloudinary.com/degxeqfok/image/upload/v1513750419/s7hrkueeap0qj5p23wcj.png&quot; alt=&quot;2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://cloudinary.com/&quot;&gt;Cloudinary 사이트&lt;/a&gt;에 접속하여 SIGN UP FOR FREE 버튼을 눌러 계정을 생성&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://res.cloudinary.com/degxeqfok/image/upload/v1513750686/henzwdap4teiavvmxpv8.jpg&quot; alt=&quot;3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;생성한 계정으로 로그인하여 Media Library탭에 들어가면 위와 같은 저장소가 보임&lt;/p&gt;
+
+&lt;p&gt;최초 로그인 시 sample 이미지가 보이며, 오른쪽 상단에는 사용자의 cloud이름과 사용자 이름이 보임&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://res.cloudinary.com/degxeqfok/image/upload/v1513751010/pbvi2kq6hjosjjurnzxp.png&quot; alt=&quot;4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;화면에서 Setting -&amp;gt; Security -&amp;gt; Access 로 들어가면 API Key와 API Secret값을 볼 수 있음&lt;/p&gt;
+
+&lt;p&gt;default로 상태는 활성화(Active)로 설정된 것을 확인&lt;/p&gt;
+
+&lt;p&gt;API Secret값은 ‘‘***'’로 처리된 부분을 클릭하면 값이 보임&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;1-3-2-ruby언어로-cloudinary-file-upload-api사용하기&quot;&gt;1-3-2. ruby언어로 Cloudinary file upload API사용하기&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;gem install cloudinary&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;cloudinary를 사용하기 위해서 ruby gem으로 설치&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;require 'cloudinary'
+
+Cloudinary.config do |config|
+  config.cloud_name = 'cloud_name'
+  config.api_key = '*******************'
+  config.api_secret = '*************'
+end&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;cloudinary를 import시켜 준 후 1-3-1에서 확인했던 API Key와 API Secret값을 넣어줌&lt;/p&gt;
+
+&lt;p&gt;clound_name에는 오른쪽 상단에 위치한 이름을 넣어줌(기본값 : degxeqfok)&lt;/p&gt;
+
+&lt;p&gt;위의 설정은 ruby코드 파일 내에서 해주는 방법이며, yml파일을 이용한 방법은 &lt;a href=&quot;https://cloudinary.com/documentation/rails_integration#rails_getting_started_guide&quot;&gt;yml파일 설정&lt;/a&gt;을 참조&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;image_path = ARGV
+
+result = Cloudinary::Uploader.upload(image_path[0])		//cloudinary로 upload
+
+url = result['url']		//결과값에서 url와 파일이름 추출
+file_name = result['original_filename']
+
+puts &quot;&lt;pre&gt; ![#{file_name}](#{url})&lt;/pre&gt;&quot;		//호스팅 된 url결과값 출력
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;image_path는 shell에서 입력한 이미지 경로를 매개변수로 받아옴&lt;/p&gt;
+
+&lt;p&gt;실제 Cloudinary에 이미지를 입로드 한 후 성공한 *결과값을 받아옴&lt;/p&gt;
+
+&lt;p&gt;호스팅 된 URL와 파일이름을 가지고와서 markdown이미지 문법 결과값을 출력&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;*결과값 result는 다음과 같은 값을 return&lt;/strong&gt;	&lt;img src=&quot;http://res.cloudinary.com/degxeqfok/image/upload/v1513751879/nokvprh1y1gksdufshzr.png&quot; alt=&quot;5&quot; /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;구분&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;설명&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;url&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;호스팅 URL&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;secure_url&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;public_id&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;업로드 된 이미지에 접근하는데 필요한 식별자(사용자가 지정 가능)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;version&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;이미지를 변환할 때 이용한 프로그램 버전(Aspose 문서 변환)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;format&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;이미지 확장자&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;width&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;이미지 넓이&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;height&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;이미지 높이&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;bytes&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;이미지 크기&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://res.cloudinary.com/degxeqfok/image/upload/v1513757344/wlgzte0gt5r6fo4pqiup.png&quot; alt=&quot;2&quot; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+
+ruby cloudinary-upload.rb 로컬이미지경로
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;위의 명령어를 치면 결과값으로 호스팅 된 이미지 url이 나오는 것을 확인&lt;/p&gt;
+
+&lt;h3 id=&quot;2-참고자료&quot;&gt;2. 참고자료&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;https://www.ruby-lang.org/ko/, ruby-korea, accessed 2017-12-20&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;https://cloudinary.com/documentation/rails_integration#rails_getting_started_guide, cloudinary, accessed 2017-12-20&lt;/p&gt;
+
+    &lt;p&gt;​&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">1. 연구노트</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll-and-hybe/test" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-12-07T13:58:11+09:00</published><updated>2017-12-07T13:58:11+09:00</updated><id>http://localhost:4000/jekyll-and-hybe/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll-and-hybe/test">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>jh.heo</name></author><category term="jekyll" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
