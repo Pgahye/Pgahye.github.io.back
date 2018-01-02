@@ -1,4 +1,272 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/jekyll-and-hybe/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/jekyll-and-hybe/" rel="alternate" type="text/html" /><updated>2017-12-21T13:22:44+09:00</updated><id>http://localhost:4000/jekyll-and-hybe/</id><title type="html">하이브레인넷 부설연구소</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">2017-12-10-박가혜</title><link href="http://localhost:4000/jekyll-and-hybe/2017/12/20/ghpark.html" rel="alternate" type="text/html" title="2017-12-10-박가혜" /><published>2017-12-20T17:58:11+09:00</published><updated>2017-12-20T17:58:11+09:00</updated><id>http://localhost:4000/jekyll-and-hybe/2017/12/20/ghpark</id><content type="html" xml:base="http://localhost:4000/jekyll-and-hybe/2017/12/20/ghpark.html">&lt;h3 id=&quot;연구내용&quot;&gt;연구내용&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/jekyll-and-hybe/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/jekyll-and-hybe/" rel="alternate" type="text/html" /><updated>2018-01-02T15:21:13+09:00</updated><id>http://localhost:4000/jekyll-and-hybe/</id><title type="html">하이브레인넷 부설연구소</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">2017-12-10-박가혜</title><link href="http://localhost:4000/jekyll-and-hybe/travis/2017/12/22/ghpark0.html" rel="alternate" type="text/html" title="2017-12-10-박가혜" /><published>2017-12-22T17:58:11+09:00</published><updated>2017-12-22T17:58:11+09:00</updated><id>http://localhost:4000/jekyll-and-hybe/travis/2017/12/22/ghpark0</id><content type="html" xml:base="http://localhost:4000/jekyll-and-hybe/travis/2017/12/22/ghpark0.html">&lt;h2 id=&quot;travis로-다른-repository-파일-가지고-오기&quot;&gt;travis로 다른 repository 파일 가지고 오기&lt;/h2&gt;
+
+&lt;p&gt;posting된 게시물을 모아놓은 posts 디렉토리를
+Node.js의 medium exporter패키지를 이용하므로, node.js가 설치되어있어야 함&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;medium exporter패키지 설치
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/xdamman/mediumexporter&quot;&gt;Medium Exporter github URL&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;npm install -g mediumexporter
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ol&gt;
+  &lt;li&gt;yaml frontmatter를 자동으로 추가하기 위해, /mediumexporter/index.js 파일을 /usr/lib/node_modules/mediumexporter/에 추가 (기존 index.js 삭제)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;post&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;600bdec36593&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;https://medium.com/@robbinscm/mayor-bill-de-blasio-gothamist-dnainfo-interview-cbce444ca421&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Wed Dec 20 2017 00:28:23 GMT+0900 (DST)&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;New York&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Mayor Bill De Blasio&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Sanctuary Cities&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Journalism&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Inequality&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;사용방법
+마크다운 파일을 받을 디렉토리에서 명령어 실행&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; mediumexporter &lt;span class=&quot;nt&quot;&gt;--headers&lt;/span&gt; Medium 주소 &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; medium_post.md
+&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; mediumexporter &lt;span class=&quot;nt&quot;&gt;--headers&lt;/span&gt; https://medium.com/@xdamman/my-10-day-meditation-retreat-in-silence-71abda54940e &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; medium_post.md
+&lt;span class=&quot;go&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;도움말은 mediumexporter -h 을 이용&lt;/p&gt;
+
+&lt;h4 id=&quot;payload&quot;&gt;payload&lt;/h4&gt;
+&lt;p&gt;사용에 있어서 전송되는 데이터를 의미, 전송의 근본적인 목적이 되는 데이터의 일부분으로 데이터와 함께 전송되는 헤더와 메타데이터와 같은 데이터는 제외된다. 데이터 덩어리 중 흥미있는 데이터를 의미한다.&lt;/p&gt;
+
+&lt;h4 id=&quot;javascript의-object를-다루는-몇가지-팁&quot;&gt;Javascript의 Object를 다루는 몇가지 팁&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;Object의 key를 변수로 받기&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;person&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;neko&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;gender&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;male&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;person&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;person&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;gender&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;요소의 갯수 알아내기&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// object의 요소 갯수가 반환됩니다.&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Object.keys()만 돌리게 되면 해당 Object의 value값만 배열로 반환이 됩니다.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Object의 value 알아내기&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;obj&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'bar'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;baz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// ['bar', 42]&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// array like object&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;obj&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'a'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'b'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'c'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// ['a', 'b', 'c']&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;참고자료&quot;&gt;참고자료&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/xdamman/mediumexporter&quot;&gt;Medium Exporter github URL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ko.wikipedia.org/wiki/%ED%8E%98%EC%9D%B4%EB%A1%9C%EB%93%9C&quot;&gt;payload&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.nekoromancer.kr/2014/07/03/javascript%EC%9D%98-object%EB%A5%BC-%EB%8B%A4%EB%A3%A8%EB%8A%94-%EB%AA%87%EA%B0%80%EC%A7%80-%ED%8C%81%EB%93%A4/&quot;&gt;Javascript의 Object를 다루는 몇가지 팁들&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/values&quot;&gt;Object.values()&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>gh.park</name></author><category term="[&quot;travis&quot;]" /><category term="연구노트" /><category term="인턴십" /><summary type="html">travis로 다른 repository 파일 가지고 오기 posting된 게시물을 모아놓은 posts 디렉토리를 Node.js의 medium exporter패키지를 이용하므로, node.js가 설치되어있어야 함 medium exporter패키지 설치 Medium Exporter github URL npm install -g mediumexporter yaml frontmatter를 자동으로 추가하기 위해, /mediumexporter/index.js 파일을 /usr/lib/node_modules/mediumexporter/에 추가 (기존 index.js 삭제) --- layout: post author: 600bdec36593 url: https://medium.com/@robbinscm/mayor-bill-de-blasio-gothamist-dnainfo-interview-cbce444ca421 date: Wed Dec 20 2017 00:28:23 GMT+0900 (DST) tags: [New York, Mayor Bill De Blasio, Sanctuary Cities, Journalism, Inequality ] --- 사용방법 마크다운 파일을 받을 디렉토리에서 명령어 실행 $ mediumexporter --headers Medium 주소 &amp;gt; medium_post.md $&amp;gt; mediumexporter --headers https://medium.com/@xdamman/my-10-day-meditation-retreat-in-silence-71abda54940e &amp;gt; medium_post.md 도움말은 mediumexporter -h 을 이용 payload 사용에 있어서 전송되는 데이터를 의미, 전송의 근본적인 목적이 되는 데이터의 일부분으로 데이터와 함께 전송되는 헤더와 메타데이터와 같은 데이터는 제외된다. 데이터 덩어리 중 흥미있는 데이터를 의미한다. Javascript의 Object를 다루는 몇가지 팁 Object의 key를 변수로 받기 var person = { name : &quot;neko&quot;, gender : &quot;male&quot; }; console.log( person.name, person.gender ); 요소의 갯수 알아내기 var object = { ... }; var length = Object.keys( object ).length; console.log( length ); // object의 요소 갯수가 반환됩니다. // Object.keys()만 돌리게 되면 해당 Object의 value값만 배열로 반환이 됩니다. Object의 value 알아내기 var obj = { foo: 'bar', baz: 42 }; console.log(Object.values(obj)); // ['bar', 42] // array like object var obj = { 0: 'a', 1: 'b', 2: 'c' }; console.log(Object.values(obj)); // ['a', 'b', 'c'] 참고자료 Medium Exporter github URL payload Javascript의 Object를 다루는 몇가지 팁들 Object.values()</summary></entry><entry><title type="html">2017-12-10-박가혜</title><link href="http://localhost:4000/jekyll-and-hybe/shell%EB%AA%85%EB%A0%B9%EC%96%B4/2017/12/21/ghpark1.html" rel="alternate" type="text/html" title="2017-12-10-박가혜" /><published>2017-12-21T17:58:11+09:00</published><updated>2017-12-21T17:58:11+09:00</updated><id>http://localhost:4000/jekyll-and-hybe/shell%EB%AA%85%EB%A0%B9%EC%96%B4/2017/12/21/ghpark1</id><content type="html" xml:base="http://localhost:4000/jekyll-and-hybe/shell%EB%AA%85%EB%A0%B9%EC%96%B4/2017/12/21/ghpark1.html">&lt;h3 id=&quot;git-sed이란&quot;&gt;git sed이란?&lt;/h3&gt;
+
+&lt;p&gt;스트림 편집기의 일종
+ed 명령어와 grep명령어 기능의 일부를 합친 것
+파일을 수정할 수 있게 하는 반면, ed처럼 대화식 처리는 불가능하다.
+sed는 1개 라인씩 입력라인을 읽어들여 표준으로 출력한다.&lt;/p&gt;
+
+&lt;p&gt;sed 명령어는 라인을 하나씩 읽고 수정, 출력하기 때문에. 기억장치의 버퍼를 사용하지 않는다. 그래서 파일의 크기에 제한없이 작업할 수 있다.&lt;/p&gt;
+
+&lt;h4 id=&quot;주소지정&quot;&gt;주소지정&lt;/h4&gt;
+
+&lt;p&gt;편집하고자 하는 행을 선택하는 것
+이 주소는 숫자나, 정규표현식 또는 둘의 조합으로 표현한다.
+주소를 지정하지 않으면 입력파일 전체에 대해 작업을 진행한다.&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;sed ‘1,3p’ datafile
+: datafile의 1행에서 3행까지 출력한다. p는 행을 출력하라는 명령어이다.
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;명령어-및-옵션&quot;&gt;명령어 및 옵션&lt;/h4&gt;
+
+&lt;h5 id=&quot;명령어&quot;&gt;명령어&lt;/h5&gt;
+
+&lt;p&gt;a\ : 현재 행에 하나 이상의 새로운 행을 추가한다.&lt;/p&gt;
+
+&lt;p&gt;c\ : 현재 행의 내용을 새로운 내용으로 바꾼다.&lt;/p&gt;
+
+&lt;p&gt;i\ : 현재 행의 위에 삽입한다.&lt;/p&gt;
+
+&lt;p&gt;d : 행을 삭제한다.&lt;/p&gt;
+
+&lt;p&gt;l : 출력되지 않는 특수문자를 출력한다.&lt;/p&gt;
+
+&lt;p&gt;p : 행을 출력한다.&lt;/p&gt;
+
+&lt;p&gt;n : 다음 입력 행을 첫 번째 명령어가 아닌 다음 명령어에서 처리하게 한다.&lt;/p&gt;
+
+&lt;p&gt;q : sed를 종료한다.&lt;/p&gt;
+
+&lt;p&gt;r : 파일로부터 행을 읽어온다.&lt;/p&gt;
+
+&lt;p&gt;! : 선택된 행을 제외한 나머지 전체 행에 명령어를 적용한다.&lt;/p&gt;
+
+&lt;p&gt;s : 문자열을 치환한다.&lt;/p&gt;
+
+&lt;h5 id=&quot;옵션&quot;&gt;옵션&lt;/h5&gt;
+
+&lt;p&gt;-e : 다중 편집시 사용.&lt;/p&gt;
+
+&lt;p&gt;-f : sed 스크립트 파일 지정에 사용.&lt;/p&gt;
+
+&lt;p&gt;-n : 출력을 생략한다.&lt;/p&gt;
+
+&lt;h4 id=&quot;예제&quot;&gt;예제&lt;/h4&gt;
+
+&lt;p&gt;4.1 출력 : p&lt;/p&gt;
+
+&lt;p&gt;sed ‘/love/p’ datafile&lt;/p&gt;
+
+&lt;p&gt;:모든 행을 표준 출력으로 내보냄, 패턴 love가 있는 행을 찾으면 그 행을 한 번 더 출력&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;sed -n ‘/love/p’ datafile&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;-n 옵션을 사용하면 love 패턴을 포함하는 행들만 출력&lt;/p&gt;
+  &lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;4.2 삭제 : d&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;sed ‘3d’ datafile&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;3번 행을 삭제,  다른 행들은 기본적으로 한번 출력된다.&lt;/p&gt;
+  &lt;/dd&gt;
+  &lt;dt&gt;sed ‘3,$d’ datafile&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;3번 행부터 마지막 행까지 삭제,  그리고 나머지 행들이 출력된다.&lt;/p&gt;
+  &lt;/dd&gt;
+  &lt;dt&gt;sed ‘$d’ datafile&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;마지막 행을 삭제, 삭제된 행 이외의 모든 행들이 출력된다.&lt;/p&gt;
+  &lt;/dd&gt;
+  &lt;dt&gt;sed ‘/love/d’ datafile&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;love를 포함한 모든 행을 삭제,  나머지 행들을 출력한다.&lt;/p&gt;
+  &lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;4.3 치환 : s&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;sed ‘s/love/peace/g’ datafile&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;love를 peace로 치환,  g플래그는 행 전체에 치환이 적용됨을 의미한다. g플래그가 없으면 행에서 맨 처음 등장하는 love만 peace로 치환된다.&lt;/p&gt;
+  &lt;/dd&gt;
+  &lt;dt&gt;sed -n ‘s/^love/peace/p’ datafile&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;-n 옵션은 p플래그와 같이 사용되어 치환이 일어난 행만 출력한다.&lt;/p&gt;
+  &lt;/dd&gt;
+  &lt;dt&gt;sed ‘s/[0-9][0-9]$/&amp;amp;.5/’ datafile&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;&amp;amp;는 검색열에서 지정한 문자열을 대신한다. 즉 두자리 숫자로 끝나는 행은 그 숫자들에 .5가 추가된다.&lt;/p&gt;
+  &lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;4.4 행의 선택 범위 : 쉼표(,)&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;sed -n ‘/love/,/peace/p’ datafile&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;love가 나오는 행과 peace가 나오는 행 사이의 모든 행들이 출력된다. love가 peace 다음에 나오면 love가 나오는 행부터 마지막 행까지 출력된다.&lt;/p&gt;
+  &lt;/dd&gt;
+  &lt;dt&gt;sed -n ‘5,/^love/p’ datafile&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;5번째 행부터 love로 시작하는 행까지 출력한다.&lt;/p&gt;
+  &lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;4.5 다중 편집 : e&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;sed -e ‘1,3d’ -e ‘s/love/peace/’ datafile&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;첫 번째 명령은 1행부터 3행까지 삭제하고, 두 번째 명령은 love를 peace로 치환하는 것이다.&lt;/p&gt;
+  &lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;4.6 파일로 부터 읽기 : r&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;sed ‘/love/r newfile’ datafile&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;newfile의 내용을 읽어 datafile의 패턴 love를 찾은 곳에 삽입한다. 패턴이 여러번 나오면 매번 중복해서 출력된다.&lt;/p&gt;
+  &lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;4.7 파일로 쓰기 : w&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;sed -n ‘/love/w newfile’ datafile&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;love를 포함하는 행들이 newfile에 저장된다.&lt;/p&gt;
+  &lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;4.8 붙이기 : a&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;sed ‘/^love /a\ —–’ datafile&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;패턴 love로 시작하고 공백문자가 있는 행 다음에 명령어 a\뒤의 문자열을 추가한다.&lt;/p&gt;
+  &lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;4.9 삽입 : i&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;sed ‘/love/i\ —–’ datafile&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;패턴 love를 찾은 후 명령어 i\ 다음에 오는 텍스트를 love가 포함된 행 위에 삽입한다.&lt;/p&gt;
+  &lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;4.10 종료 : q&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;sed ‘5q’ datafile&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;5행까지 출력한 후 sed프로그램 종료한다.&lt;/p&gt;
+  &lt;/dd&gt;
+  &lt;dt&gt;sed ‘/love/{ s/love/peace/;q; }’ datafile&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;패턴 love를 찾은 행에서 love가 peace로 치환되고 q 명령어로 sed 종료한다.&lt;/p&gt;
+  &lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;다중명령어 처리시 중괄호를 사용하며, 이때 각 명령어의 끝에 세미콜론을 붙인다.&lt;/p&gt;
+
+&lt;h3 id=&quot;참고자료&quot;&gt;참고자료&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;http://hyunkie.tistory.com/51 [현기의 자료창고]&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>gh.park</name></author><category term="[&quot;shell명령어&quot;]" /><category term="연구노트" /><category term="인턴십" /><summary type="html">git sed이란? 스트림 편집기의 일종 ed 명령어와 grep명령어 기능의 일부를 합친 것 파일을 수정할 수 있게 하는 반면, ed처럼 대화식 처리는 불가능하다. sed는 1개 라인씩 입력라인을 읽어들여 표준으로 출력한다. sed 명령어는 라인을 하나씩 읽고 수정, 출력하기 때문에. 기억장치의 버퍼를 사용하지 않는다. 그래서 파일의 크기에 제한없이 작업할 수 있다. 주소지정 편집하고자 하는 행을 선택하는 것 이 주소는 숫자나, 정규표현식 또는 둘의 조합으로 표현한다. 주소를 지정하지 않으면 입력파일 전체에 대해 작업을 진행한다. sed ‘1,3p’ datafile : datafile의 1행에서 3행까지 출력한다. p는 행을 출력하라는 명령어이다. 명령어 및 옵션 명령어 a\ : 현재 행에 하나 이상의 새로운 행을 추가한다. c\ : 현재 행의 내용을 새로운 내용으로 바꾼다. i\ : 현재 행의 위에 삽입한다. d : 행을 삭제한다. l : 출력되지 않는 특수문자를 출력한다. p : 행을 출력한다. n : 다음 입력 행을 첫 번째 명령어가 아닌 다음 명령어에서 처리하게 한다. q : sed를 종료한다. r : 파일로부터 행을 읽어온다. ! : 선택된 행을 제외한 나머지 전체 행에 명령어를 적용한다. s : 문자열을 치환한다. 옵션 -e : 다중 편집시 사용. -f : sed 스크립트 파일 지정에 사용. -n : 출력을 생략한다. 예제 4.1 출력 : p sed ‘/love/p’ datafile :모든 행을 표준 출력으로 내보냄, 패턴 love가 있는 행을 찾으면 그 행을 한 번 더 출력 sed -n ‘/love/p’ datafile -n 옵션을 사용하면 love 패턴을 포함하는 행들만 출력 4.2 삭제 : d sed ‘3d’ datafile 3번 행을 삭제, 다른 행들은 기본적으로 한번 출력된다. sed ‘3,$d’ datafile 3번 행부터 마지막 행까지 삭제, 그리고 나머지 행들이 출력된다. sed ‘$d’ datafile 마지막 행을 삭제, 삭제된 행 이외의 모든 행들이 출력된다. sed ‘/love/d’ datafile love를 포함한 모든 행을 삭제, 나머지 행들을 출력한다. 4.3 치환 : s sed ‘s/love/peace/g’ datafile love를 peace로 치환, g플래그는 행 전체에 치환이 적용됨을 의미한다. g플래그가 없으면 행에서 맨 처음 등장하는 love만 peace로 치환된다. sed -n ‘s/^love/peace/p’ datafile -n 옵션은 p플래그와 같이 사용되어 치환이 일어난 행만 출력한다. sed ‘s/[0-9][0-9]$/&amp;amp;.5/’ datafile &amp;amp;는 검색열에서 지정한 문자열을 대신한다. 즉 두자리 숫자로 끝나는 행은 그 숫자들에 .5가 추가된다. 4.4 행의 선택 범위 : 쉼표(,) sed -n ‘/love/,/peace/p’ datafile love가 나오는 행과 peace가 나오는 행 사이의 모든 행들이 출력된다. love가 peace 다음에 나오면 love가 나오는 행부터 마지막 행까지 출력된다. sed -n ‘5,/^love/p’ datafile 5번째 행부터 love로 시작하는 행까지 출력한다. 4.5 다중 편집 : e sed -e ‘1,3d’ -e ‘s/love/peace/’ datafile 첫 번째 명령은 1행부터 3행까지 삭제하고, 두 번째 명령은 love를 peace로 치환하는 것이다. 4.6 파일로 부터 읽기 : r sed ‘/love/r newfile’ datafile newfile의 내용을 읽어 datafile의 패턴 love를 찾은 곳에 삽입한다. 패턴이 여러번 나오면 매번 중복해서 출력된다. 4.7 파일로 쓰기 : w sed -n ‘/love/w newfile’ datafile love를 포함하는 행들이 newfile에 저장된다. 4.8 붙이기 : a sed ‘/^love /a\ —–’ datafile 패턴 love로 시작하고 공백문자가 있는 행 다음에 명령어 a\뒤의 문자열을 추가한다. 4.9 삽입 : i sed ‘/love/i\ —–’ datafile 패턴 love를 찾은 후 명령어 i\ 다음에 오는 텍스트를 love가 포함된 행 위에 삽입한다. 4.10 종료 : q sed ‘5q’ datafile 5행까지 출력한 후 sed프로그램 종료한다. sed ‘/love/{ s/love/peace/;q; }’ datafile 패턴 love를 찾은 행에서 love가 peace로 치환되고 q 명령어로 sed 종료한다. 다중명령어 처리시 중괄호를 사용하며, 이때 각 명령어의 끝에 세미콜론을 붙인다. 참고자료 http://hyunkie.tistory.com/51 [현기의 자료창고]</summary></entry><entry><title type="html">2017-12-10-박가혜</title><link href="http://localhost:4000/jekyll-and-hybe/2017/12/20/ghpark.html" rel="alternate" type="text/html" title="2017-12-10-박가혜" /><published>2017-12-20T17:58:11+09:00</published><updated>2017-12-20T17:58:11+09:00</updated><id>http://localhost:4000/jekyll-and-hybe/2017/12/20/ghpark</id><content type="html" xml:base="http://localhost:4000/jekyll-and-hybe/2017/12/20/ghpark.html">&lt;h3 id=&quot;연구내용&quot;&gt;연구내용&lt;/h3&gt;
 
 &lt;h4 id=&quot;medium-blog-마크다운형태로-저장하기&quot;&gt;Medium blog 마크다운형태로 저장하기&lt;/h4&gt;
 &lt;p&gt;Node.js의 medium exporter패키지를 이용하므로, node.js가 설치되어있어야 함&lt;/p&gt;
