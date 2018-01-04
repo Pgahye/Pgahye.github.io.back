@@ -26,7 +26,7 @@ for i in $ADMIN_GIT_EMAIL; do
     if [[ "$branch" != master ]]
     then
 
-       EXIT="EXIT1"  #스페이스 주의
+       EXIT="EXIT1"  
     fi
 done
 

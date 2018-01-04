@@ -13,18 +13,18 @@ git:
   admins: ## admins에 등록된 사용자만 master에 commit, merge, push를 진행할 수 있음
     - sksong@hibrain.net
     - saltfactory@gmail.com
+    - rkgp0515@gmail.com
 
 ## Medium tokens 설정
 medium:
-  integration_token: 2573b0a47fb27dde37fc91f7c5461aff3802ba0edf1f362473f47046e878fe3e2
+  integration_token: 2573b0a47fb27dde37fc91f7c5461aff3802ba0edf1f362473f47046e878fe3e2 
 
 ## github 설정
-github_page:
-  remote_url: git@bitbucket.org:hibrainnet/jekyll-and-hybe.git
-  remote_name: github
-  branch: source
-  builder: travis
-  # remote_name: ?? 이건 왜 필요한건지?
+#github_page:
+#  remote_url: /hibrainnet/jekyll-and-hybe.git
+#  branch: source
+#  token: personal_access_token 
+ # builder: travis
 
 ## travis를 이용한 github page 빌드 설정
 travis:
@@ -41,9 +41,6 @@ sns:
 # twitter_username: hibrainapps
 # github_username:  hibrainnet
 
-# Google Analytics
-google_analytics: UA-111776600-1
-
 ## 댓글 계정
 comments:
   disqus:
@@ -57,7 +54,7 @@ comments:
 pagination:
   type: numbering
   enabled: true
-  per_page: 2 # 한 화면에 보여줄 post 갯수
+  per_page: 5 # 한 화면에 보여줄 post 갯수
   permalink: '/page/:num'
   limit: 0 # 한번에 보여줄 페이징 숫자
   sort_field: "date"
@@ -101,6 +98,6 @@ exclude:
 #githubURL=소스코드를 push할 URL
 #githubBranch=소스코트를 push할 Branch
 #remoteName=소스코드를 보낼 remote 이름
-githubURL: git@github.com:hibrainnet/jekyll-and-hybe.git
-githubBranch: source
-remoteName: github
+#githubURL: git@github.com:hibrainnet/jekyll-and-hybe.git
+#githubBranch: source
+#remoteName: github
