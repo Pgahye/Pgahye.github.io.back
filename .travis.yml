@@ -29,7 +29,7 @@ before_install:
 - git remote add other https://Pgahye:12d2f451bcf19daa7158070ae62bdebd4070e171@github.com/Pgahye/Posts.git
 - git fetch other
 #- git pull other master
-- git merge other/master
+- git merge other/post
 
 
 install:
