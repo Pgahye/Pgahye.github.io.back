@@ -20,6 +20,12 @@ git:
 # Google Analytics
 google_analytics: UA-18071244-5    
 
+
+github_post:
+    remote_url: https://Pgahye:12d2f451bcf19daa7158070ae62bdebd4070e171@github.com/Pgahye/Posts.git
+
+
+
 ## Medium tokens 설정
 medium:
   integration_token: ${MEDIUM_TOKEN}
