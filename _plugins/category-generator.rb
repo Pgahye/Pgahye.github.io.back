@@ -12,9 +12,6 @@ class CategoryPage < Page
       self.read_yaml(File.join(base, '_layouts'), 'category.html')
       self.data['category'] = category
       self.data['title'] = "Category: #{category}"
-      self.data['pagination'] = " "
-      self.data['  enabled'] = true
-      self.data['  category'] = "#{category}"
     end
   end
 
@@ -23,7 +20,7 @@ class CategoryPage < Page
       @site = site
       @base = base
       @dir = dir
-      @name = 'indexs.xml'
+      @name = 'feed.xml'
 
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'categories.html')
